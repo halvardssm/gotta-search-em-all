@@ -1,7 +1,7 @@
-import styled from 'styled'
+import styled from 'styled';
 
 interface IContainer {
-  baseStat: number
+    baseStat: number;
 }
 
 const Container = styled.p<IContainer>`
@@ -11,6 +11,6 @@ const Container = styled.p<IContainer>`
   text-transform: capitalize;
   /* color: ${({ baseStat }) => baseStat >= 100 && 'green'}; */
   font-weight: ${({ baseStat }) => baseStat >= 100 && 'bold'};
-`
+`;
 
-export default Container
+export default Container;

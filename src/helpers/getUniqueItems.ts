@@ -4,16 +4,16 @@
 // and if same, remove them.
 
 export const getUniqueItems = (arr: string[]) => {
-  const uniqueItems = [arr[0]]
+    const uniqueItems = [arr[0]];
 
-  for (let i = 0; i < arr.length - 1; i++) {
-    let current = arr[i]
-    let next = arr[i + 1]
+    for (let i = 0; i < arr.length - 1; i++) {
+        let current = arr[i];
+        let next = arr[i + 1];
 
-    if (current.slice(0, 10) !== next.slice(0, 10)) {
-      uniqueItems.push(next)
+        if (current.slice(0, 10) !== next.slice(0, 10)) {
+            uniqueItems.push(next);
+        }
     }
-  }
 
-  return uniqueItems
-}
+    return uniqueItems;
+};

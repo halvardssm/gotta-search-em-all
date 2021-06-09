@@ -1,12 +1,12 @@
-import React from 'react'
-import Container from './styles'
+import React from 'react';
+import Container from './styles';
 
 export interface PokeBallProps {
-  nameClass?: string
+    nameClass?: string;
 }
 
 const PokeBall = ({ nameClass }: PokeBallProps) => {
-  return <Container nameClass={nameClass}></Container>
-}
+    return <Container nameClass={nameClass}></Container>;
+};
 
-export default PokeBall
+export default PokeBall;

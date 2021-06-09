@@ -2,9 +2,9 @@
 //** This file resolves all the types within styled components
 //**
 
-import styled, { CreateStyled } from '@emotion/styled'
-import { theme } from './components/shared'
+import styled, { CreateStyled } from '@emotion/styled';
+import { theme } from './components/shared';
 
-type Theme = typeof theme
+type Theme = typeof theme;
 
-export default styled as CreateStyled<Theme>
+export default styled as CreateStyled<Theme>;

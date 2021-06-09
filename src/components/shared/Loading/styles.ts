@@ -1,7 +1,7 @@
-import styled from 'styled'
+import styled from 'styled';
 
 interface LoadingProps {
-  noBackground?: boolean
+    noBackground?: boolean;
 }
 
 // credit goes to https://codepen.io/animeshk874/pen/WGpAkj
@@ -114,6 +114,6 @@ const Container = styled.div<LoadingProps>`
       background: white;
     }
   }
-`
+`;
 
-export default Container
+export default Container;

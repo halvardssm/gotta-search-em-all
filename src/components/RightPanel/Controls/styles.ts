@@ -1,9 +1,9 @@
-import styled from 'styled'
-import { keyframes } from '@emotion/core'
+import styled from 'styled';
+import { keyframes } from '@emotion/core';
 
 type ContainerProps = {
-  error: boolean
-}
+    error: boolean;
+};
 
 const bounce = keyframes`
   from, 20%, 53%, 80%, to {
@@ -21,7 +21,7 @@ const bounce = keyframes`
   90% {
     transform: translate3d(0,-4px,0);
   }
-`
+`;
 
 const Container = styled.div<ContainerProps>`
   display: flex;
@@ -35,8 +35,7 @@ const Container = styled.div<ContainerProps>`
 
     .input {
       ${({ theme }) => theme.screen}
-      animation: ${bounce} ${({ error }) =>
-  error ? '0.3s' : '0s'} ease infinite;
+      animation: ${bounce} ${({ error }) => (error ? '0.3s' : '0s')} ease infinite;
 
       padding: 5px 10px;
       width: 50px;
@@ -48,6 +47,6 @@ const Container = styled.div<ContainerProps>`
       cursor: pointer;
     }
   }
-`
+`;
 
-export default Container
+export default Container;

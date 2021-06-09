@@ -1,8 +1,8 @@
-import styled from 'styled'
+import styled from 'styled';
 
 const Container = styled.div`
-  ${({ theme }) => theme.lightBorders}
-  width: 360px;
-`
+    ${({ theme }) => theme.lightBorders}
+    width: 360px;
+`;
 
-export default Container
+export default Container;
